@@ -10,6 +10,7 @@ function switchTheme() {
   document.body.classList.toggle("my-container-light");
 } // alterar a cor do tema
 
+
 function clickSwitchTheme() {
   switchTheme();
 }

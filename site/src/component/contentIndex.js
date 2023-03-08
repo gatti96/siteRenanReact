@@ -23,7 +23,7 @@ class ContentIndex extends React.Component {
           <div className="center">
             <div>
               <h1
-                className="text-title"
+                className="text-title colortext"
                 data-aos="fade-down"
                 data-aos-duration="3000"
                 data-aos-delay="90"
@@ -31,7 +31,7 @@ class ContentIndex extends React.Component {
                 Renan Gatti
               </h1>
               <div>
-                <h2 className="sub-title typing-animation letra-piscando">
+                <h2 className="sub-title typing-animation letra-piscando colortext">
                   Front-end Developer
                 </h2>
               </div>
