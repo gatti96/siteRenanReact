@@ -6,7 +6,7 @@ class Footer extends React.Component {
       <>
         <footer class="bg-new footer-1 text-center text-lg-start">
         
-          <div class="text-center p-3">© 2022 Copyright: Renan Gatti</div>
+          <div class="text-center p-3">© 2023 Copyright: Renan Gatti</div>
         
         </footer>
       </>

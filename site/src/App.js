@@ -9,11 +9,9 @@ function App() {
     <>
       <div>
         <Menu />
-      </div>
-      <div>
+      
         <ContentIndex />
-      </div>
-      <div>
+      
         <Footer />
       </div>
     </>

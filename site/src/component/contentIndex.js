@@ -48,7 +48,7 @@ class ContentIndex extends React.Component {
               </div>
               <div class="bg-conteudo conteudo">
                 <p>
-                  Meu nome é Renan, tenho 26 anos, sou um cidadão brasileiro e
+                  Meu nome é Renan, tenho 27 anos, sou um cidadão brasileiro e
                   italiano e tenho muito orgulho em dizer que carrego os dois
                   países no coração.
                 </p>
