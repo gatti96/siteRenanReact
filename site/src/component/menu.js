@@ -1,5 +1,8 @@
 import React from "react";
 import Logo from "./img/logo.png";
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
+import Project from "../pages/project.js";
 
 function paginaAtual() {
   alert("Página atual!");
@@ -72,48 +75,51 @@ class Menu extends React.Component {
                 >
                   <span className="navbar-toggler-icon"></span>
                 </button>
-                <div
-                  className="collapse navbar-collapse"
-                  id="navbarSupportedContent"
-                >
-                  <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li className="nav-item">
-                      <a
-                        className="nav-link active link-hover"
-                        aria-current="page"
-                        href="#"
-                        onClick={paginaAtual}
-                      >
-                        Home
-                      </a>
-                    </li>
-                    <li className="nav-item ">
-                      <a
-                        className="nav-link active link-hover"
-                        href="./pages/portfolio.html"
-                      >
-                        Projetos
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a
-                        className="nav-link active link-hover"
-                        href="./pages/contact.html"
-                      >
-                        Contato
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a
-                        className="nav-link active link-hover"
-                        href="./pages/blog.html"
-                      >
-                        Blog
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+                <Router>
+                  <div
+                    className="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                  >
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li className="nav-item">
+                        <a
+                          className="nav-link active link-hover"
+                          aria-current="page"
+                          href="#"
+                          
+                        >
+                          Home
+                        </a>
+                      </li>
+                      <li className="nav-item ">
+                        <Link to='/project' className="nav-link active link-hover">Projetos</Link>
+                        
+                      </li>
+                      <li className="nav-item">
+                        <a
+                          className="nav-link active link-hover"
+                          href="./pages/contact.html"
+                        >
+                          Contato
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a
+                          className="nav-link active link-hover"
+                          href="./pages/blog.html"
+                        >
+                          Blog
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
 
+                  <Routes>
+                    
+                    <Route path='/project' component={Project} />
+                  </Routes>
+
+                </Router>
                 <div className="container-fluid ">
                   <span className="navbar-text">Bem vindos ao meu site!</span>
                 </div>
