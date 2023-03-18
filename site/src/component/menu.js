@@ -1,10 +1,7 @@
 import React from "react";
 import Logo from "./img/logo.png";
+import {Routes, BrowserRouter} from "react-router-dom"
 
-
-function paginaAtual() {
-  alert("Página atual!");
-}
 
 function switchTheme() {
   document.body.classList.toggle("my-container");
@@ -78,43 +75,46 @@ class Menu extends React.Component {
                     className="collapse navbar-collapse"
                     id="navbarSupportedContent"
                   >
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li className="nav-item">
+                    
+                      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li className="nav-item">
+                          <a
+                            className="nav-link active link-hover"
+                            aria-current="page"
+                            href="/"
+                            
+                          >
+                            Home
+                          </a>
+                        </li>
+                        <li className="nav-item ">
                         <a
-                          className="nav-link active link-hover"
-                          aria-current="page"
-                          href="#"
+                            className="nav-link active link-hover"
+                            href="/project"
+                          >
+                            Projeto
+                          </a>
                           
-                        >
-                          Home
-                        </a>
-                      </li>
-                      <li className="nav-item ">
-                      <a
-                          className="nav-link active link-hover"
-                          href="#"
-                        >
-                          Projeto
-                        </a>
-                        
-                      </li>
-                      <li className="nav-item">
-                        <a
-                          className="nav-link active link-hover"
-                          href="./pages/contact.html"
-                        >
-                          Contato
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a
-                          className="nav-link active link-hover"
-                          href="./pages/blog.html"
-                        >
-                          Blog
-                        </a>
-                      </li>
-                    </ul>
+                        </li>
+                        <li className="nav-item">
+                          <a
+                            className="nav-link active link-hover"
+                            href="./pages/contact.html"
+                          >
+                            Contato
+                          </a>
+                        </li>
+                        <li className="nav-item">
+                          <a
+                            className="nav-link active link-hover"
+                            href="./pages/blog.html"
+                          >
+                            Blog
+                          </a>
+                        </li>
+                      </ul>
+                      
+                   
                   </div>
 
                   
