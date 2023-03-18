@@ -1,8 +1,6 @@
 import React from "react";
 import Logo from "./img/logo.png";
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { NavLink } from "react-router-dom";
-import Project from "../pages/project.js";
+
 
 function paginaAtual() {
   alert("Página atual!");
@@ -75,7 +73,7 @@ class Menu extends React.Component {
                 >
                   <span className="navbar-toggler-icon"></span>
                 </button>
-                <Router>
+                
                   <div
                     className="collapse navbar-collapse"
                     id="navbarSupportedContent"
@@ -92,7 +90,12 @@ class Menu extends React.Component {
                         </a>
                       </li>
                       <li className="nav-item ">
-                        <Link to='/project' className="nav-link active link-hover">Projetos</Link>
+                      <a
+                          className="nav-link active link-hover"
+                          href="#"
+                        >
+                          Projeto
+                        </a>
                         
                       </li>
                       <li className="nav-item">
@@ -114,12 +117,8 @@ class Menu extends React.Component {
                     </ul>
                   </div>
 
-                  <Routes>
-                    
-                    <Route path='/project' component={Project} />
-                  </Routes>
-
-                </Router>
+                  
+              
                 <div className="container-fluid ">
                   <span className="navbar-text">Bem vindos ao meu site!</span>
                 </div>
