@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "./img/logo.png";
-import {Routes, BrowserRouter} from "react-router-dom"
+import {Routes, BrowserRouter, Link} from "react-router-dom"
 
 
 function switchTheme() {
@@ -78,22 +78,12 @@ class Menu extends React.Component {
                     
                       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                          <a
-                            className="nav-link active link-hover"
-                            aria-current="page"
-                            href="/"
-                            
-                          >
-                            Home
-                          </a>
+                          <Link to={"/"}>Home</Link>
+                          
                         </li>
                         <li className="nav-item ">
-                        <a
-                            className="nav-link active link-hover"
-                            href="/project"
-                          >
-                            Projeto
-                          </a>
+                          <Link to={"/project"}>Projetos</Link>
+                       
                           
                         </li>
                         <li className="nav-item">
