@@ -38,7 +38,7 @@ const interval = setInterval(() => {
     zeroFill(now.getSeconds());
 
   // Exibe na tela usando a div#data-hora
-  document.getElementById("js-data").innerHTML = dataHora;
+  
 }, 1000);
 
 //fim captura da data
