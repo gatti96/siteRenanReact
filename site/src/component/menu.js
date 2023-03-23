@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "./img/logo.png";
-import {Routes, BrowserRouter, Link} from "react-router-dom"
+import {Link} from "react-router-dom"
 
 
 function switchTheme() {
@@ -39,7 +39,7 @@ const interval = setInterval(() => {
 
   // Exibe na tela usando a div#data-hora
   
-}, 1000);
+});
 
 //fim captura da data
 
