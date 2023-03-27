@@ -1,16 +1,16 @@
-import Menu from "../component/menu";
-import Footer from "../component/footer";
+import React from "react";
 
-function Project(){
-  return(
+class Project extends React.Component {
+  return() {
     <>
       <div>
-        <Menu />
+        
         <h1>Teste projeto</h1>
-        <Footer />
+        
       </div>
     </>
-  )
+  }   
+  
 }
 
 export default Project
